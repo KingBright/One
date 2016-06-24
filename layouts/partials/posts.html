@@ -1,0 +1,5 @@
+<div class="posts main">
+    {{ range .Data.Pages }}
+    {{ .Render "post-li"}}
+    {{ end }}
+</div>
