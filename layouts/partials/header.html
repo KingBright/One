@@ -25,15 +25,15 @@
 
 <body>
 <script>
+    window.paceOptions = {
+        ajax: true,
+        document: false,
+        eventLag: false
+    };
     window.onload = function () {
         new Pjax({
             selectors: ["title", ".main"]
         })
-        window.paceOptions = {
-            ajax: false,
-            document: false,
-            eventLag: false,
-        };
     }
 </script>
 
