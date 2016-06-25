@@ -4,21 +4,33 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title> {{ .Title }} &middot; {{ .Site.Params.Subtitle }} </title>
-    <!-- CSS -->
+    <!-- base style -->
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/one.css">
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/typo.css">
-    <script src="{{ .Site.BaseURL }}js/vue.js"></script>
     <!-- Icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="{{ .Site.BaseURL }}img/favicon.ico">
     <!-- hilight -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/styles/default.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+    <!-- pace -->
+    <script data-pace-options='{ajax: true, document: false, eventLag: true}'
+            src="{{ .Site.BaseURL }}js/pace.js"></script>
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/pace.css"/>
+    <!-- pjax -->
+    <script src="{{ .Site.BaseURL }}js/pjax.js"></script>
     <!-- RSS -->
     <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}"/>
 </head>
 
 <body>
+<script>
+    window.onload = function () {
+        new Pjax({
+            selectors: ["title", ".main"]
+        })
+    }
+</script>
 
 <h2 class="title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h2>
