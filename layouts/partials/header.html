@@ -15,8 +15,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <!-- pace -->
-    <script data-pace-options='{ajax: true, document: false, eventLag: true}'
-            src="{{ .Site.BaseURL }}js/pace.js"></script>
+    <script src="{{ .Site.BaseURL }}js/pace.js"></script>
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/pace.css"/>
     <!-- pjax -->
     <script src="{{ .Site.BaseURL }}js/pjax.js"></script>
@@ -30,6 +29,11 @@
         new Pjax({
             selectors: ["title", ".main"]
         })
+        window.paceOptions = {
+            ajax: false,
+            document: false,
+            eventLag: false,
+        };
     }
 </script>
 
