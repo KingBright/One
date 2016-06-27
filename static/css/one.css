@@ -72,7 +72,7 @@ h2.post-title {
 .post-content code {
     margin-left: 0.3em;
     margin-right: 0.3em;
-    color: #95a5a6;
+    color: #5F9EA0;
 }
 
 .post-content > h2 {
@@ -91,6 +91,22 @@ h2.post-title {
 .footer {
     margin: 1em auto;
     text-align: center;
+}
+
+.error {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Source Code Pro";
+    font-size: 2.5em;
+    color: #5F9EA0;
 }
 
 @media only screen and (max-device-width: 600px) {
