@@ -125,11 +125,11 @@ sub {
 }
 
 a {
-    color: cadetblue;
+    color: #7FBEC0;
 }
 
 a:hover {
-    color: #7FBEC0;
+    color: cadetblue;
     text-decoration: none;
 }
 

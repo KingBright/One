@@ -1,5 +1,5 @@
 <div class="posts main">
-    {{ range .Data.Pages }}
+    {{ range where .Data.Pages "Section" "post" }}
     {{ partial "post-li.html" .}}
     {{ end }}
 </div>
