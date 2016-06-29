@@ -1,0 +1,13 @@
+baseurl: Your.Url
+title: YourBlog
+metaDataFormat: yaml
+permalinks:
+  post: /:year/:month/:slug/
+params:
+  Subtitle: YourSubtitle
+  Author: YourName
+  GitHub: YourGithubName
+  About: YourAboutPostName
+  Tweet: YourTweetPostName
+  AboutTitle: About
+  TweetTitle: Tweet
