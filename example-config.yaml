@@ -11,3 +11,4 @@ params:
   Tweet: YourTweetPostName
   AboutTitle: About
   TweetTitle: Tweet
+  Ga: YourGoogleAnalysisTrackingId
