@@ -17,5 +17,17 @@
     ga('send', 'pageview');
 </script>
 {{ end }}
+<!-- baidu analysis -->
+{{ if isset .Site.Params "Ba" }}
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?{{ .Site.Params.Ba }}";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+{{ end }}
 </body>
 </html>

@@ -12,3 +12,4 @@ params:
   AboutTitle: About
   TweetTitle: Tweet
   Ga: YourGoogleAnalysisTrackingId
+  Ba: YourBaiduAnalysisTrackingId
