@@ -1,6 +1,6 @@
-{{ if and (isset .Site.Params "About") (eq .Slug .Site.Params.About) }}
+{{ if and ( .Site.Params.About) (eq .Slug .Site.Params.About) }}
 {{ partial "about.html" . }}
-{{ else if and (isset .Site.Params "Tweet") (eq .Slug .Site.Params.Tweet) }}
+{{ else if and ( .Site.Params.Tweet) (eq .Slug .Site.Params.Tweet) }}
 {{ partial "tweet.html" . }}
 {{ else }}
 {{ partial "post.html" . }}
